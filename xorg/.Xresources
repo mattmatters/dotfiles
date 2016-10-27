@@ -1,0 +1,3 @@
+#include "/home/matt/.Xresources.d/xterm"
+#include "/home/matt/.Xresources.d/xresources/Xresources.dark"
+#include "/home/matt/.Xresources.d/font"
