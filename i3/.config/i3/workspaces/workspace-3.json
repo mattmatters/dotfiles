@@ -1,0 +1,98 @@
+// vim:ts=4:sw=4:et
+{
+    // splitv split container with 1 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 1,
+    "type": "con",
+    "nodes": [
+        {
+            // splitv split container with 2 children
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "splitv",
+            "percent": 1,
+            "type": "con",
+            "nodes": [
+                {
+                    // splith split container with 2 children
+                    "border": "normal",
+                    "floating": "auto_off",
+                    "layout": "splith",
+                    "percent": 0.8,
+                    "type": "con",
+                    "nodes": [
+                        {
+                            "border": "normal",
+                            "current_border_width": 2,
+                            "floating": "auto_off",
+                            "geometry": {
+                               "height": 484,
+                               "width": 724,
+                               "x": 0,
+                               "y": 0
+                            },
+                            "name": "matt@bigpapamatt: ~",
+                            "percent": 0.2,
+                            "swallows": [
+                               {
+                               // "class": "^XTerm$",
+                               // "instance": "^xterm$",
+                               // "title": "^matt\\@bigpapamatt\\:\\ \\~$",
+                               // "transient_for": "^$"
+                               }
+                            ],
+                            "type": "con"
+                        },
+                        {
+                            "border": "normal",
+                            "current_border_width": 2,
+                            "floating": "auto_off",
+                            "geometry": {
+                               "height": 676,
+                               "width": 752,
+                               "x": 0,
+                               "y": 0
+                            },
+                            "name": "~/dotfiles/i3/.config/i3/config",
+                            "percent": 0.8,
+                            "swallows": [
+                               {
+                               // "class": "^Emacs$",
+                               // "instance": "^emacs$",
+                               // "title": "^\\~\\/dotfiles\\/i3\\/\\.config\\/i3\\/config$",
+                               // "transient_for": "^$"
+                               }
+                            ],
+                            "type": "con"
+                        }
+                    ]
+                },
+                {
+                    "border": "normal",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 484,
+                       "width": 724,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "sudo i3-save-tree --workspace 3 > ~/dotfiles/i3/workspace-3.json",
+                    "percent": 0.2,
+                    "swallows": [
+                       {
+                       // "class": "^XTerm$",
+                       // "instance": "^xterm$",
+                       // "title": "^sudo\\ i3\\-save\\-tree\\ \\-\\-workspace\\ 3\\ \\>\\ \\~\\/dotfiles\\/i3\\/workspace\\-3\\.json$",
+                       // "transient_for": "^$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        }
+    ]
+}
+
