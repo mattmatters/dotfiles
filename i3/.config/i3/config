@@ -151,8 +151,10 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
+# Make the windows not focus by which the mouse is over
+focus_follows_mouse no
+
+# Start i3bar to display a workspace bar
 bar {
 	position	top
 	status_command 	i3status
@@ -160,14 +162,14 @@ bar {
  }
 
 # Start programs
-# exec nm-applet # Lets enable this once I know other stuff works
+# i3 seems to also spawn an additional two xterm instances
+exec nm-applet
 exec clipit
-exec --no-startup-id i3-msg 'workspace 1; exec xterm'
 exec --no-startup-id i3-msg 'workspace 2; exec firefox'
 exec --no-startup-id i3-msg 'workspace 3; exec emacs'
+exec --no-startup-id i3-msg 'workspace 1;'
 
-
-
-#exec --no-startup-id "i3-msg 'workspace 3; append_layout ~/.config/i3/workspaces/workspace-3.json'"
+# Below is a script to load a layout to workspace 3
+# exec --no-startup-id "i3-msg 'workspace 3; append_layout ~/.config/i3/workspaces/workspace-3.json'"
 
 
