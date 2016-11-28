@@ -165,8 +165,6 @@ bar {
 # i3 seems to also spawn an additional two xterm instances
 exec nm-applet
 exec clipit
-exec --no-startup-id i3-msg 'workspace 4 exec xterm';
-exec --no-startup-id i3-msg 'workspace 4 exec xterm';
 exec --no-startup-id i3-msg 'workspace 2; exec firefox'
 exec --no-startup-id i3-msg 'workspace 3; exec emacs'
 exec --no-startup-id i3-msg 'workspace 1;'
